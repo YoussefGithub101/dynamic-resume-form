@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+    <link href="https://fonts.cdnfonts.com/css/nomada-didone" rel="stylesheet">
+    <link rel="stylesheet" href="css/project.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav" >
+            <div class="container">
+              <a class="navbar-brand" href="Home.html"><i class="fa-solid fa-pen-to-square" style="font-size: 50px; color: #00ACee;"></i></a>
+              <h3>Create Your Resume</h3>
+              
+              </div> 
+              <progress value="0"   id="progress"></progress>
+          </nav>
+          
+    </header>
+ 
+     
+     <main class="row1">
+        <div class="col-2"></div>
+    <form action="template 1/CV.html" method="get" class="col-7" id="form" target="_blank">
+        <h1 id="title" style="font-size: 40px;">Add your name</h1>
+        <div class="mySlides">
+        <div id="add_skills"> 
+            
+            <label for="First">First Name</label> 
+            <input type="text" name="First_Name" class="Name" id="First"> <br><br>
+            <label for="Last">Last Name</label>
+        <input type="text" name="Last_Name" class="Name" id="Last">    <br>
+        </div>
+        </div>
+
+        <div class="mySlides">
+            <div id="add_skills">
+                
+                <label for="Email">Email</label> 
+            <input type="text" name="Email" class="Name" id="Email">
+
+
+
+            <label for="Phone">Phone</label> 
+            <input type="text" name="Phone" class="Name" id="Phone">
+
+                    <label for="address">address</address></label> 
+                <input type="text" name="address" class="Name" id="Email">
+                    </div>
+            </div>
+
+            <div class="mySlides">
+                
+                    
+                    <label for="Wanted_Job">Wanted Job Title</label> 
+                <input type="text" name="Wanted_Job" class="Name" id="Wanted_Job" placeholder="e.g. Teacher">
+
+                
+                </div>
+
+
+            <div class="mySlides">
+
+                    <label for="Summary">Professional Summary
+                    </label>
+                    <textarea class="Summary" name ="Summary" placeholder="e.g. passionate science teacher with 8+ years of experience and track record of ..."></textarea>
+                       
+                </div>
+
+                <div class="mySlides">
+                    
+                       
+                        <h2>Employment History</h2>
+                        <div id="Employment">
+                            <div id="Employment_copy">
+                        <div class="date">
+                        <div>
+                        <label for="Company_name">Company Name</label><br>
+                        <input type="text" name="Company_name" class="Name" id="job">
+                        </div>
+                                
+                        <div>
+                        <label for="Job_Position">Job Position</label><br>
+                        <input type="text" name="Job_Position" class="Name" id="job">
+                        </div>
+                     
+                        </div>
+                    <label for="date">Start and End date</label>  
+                         
+                    <div class="date">
+                    <input type="month" name="Start" class="Name" id="Start" placeholder="MM / YYYY" value="2020-05">
+                    <input type="month" name="End" class="Name" id="End" placeholder="MM / YYYY" value="2022-06">
+                    </div>
+
+                    <label for="job_Desciption">Desciption</label>
+                    <textarea class="Summary" name ="job_Desciption" placeholder="e.g. created and implemented lesson plans  based on child-led interests and curiosties."></textarea>
+                </div>
+                     
+                </div>
+                    <div class="add_remove">
+                    <p class="add" id="addEmployment">+ Add one more Employment</p>
+                    <p class="remove" id="removeEmployment">- remove Employment</p>
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    
+                       
+                        <h2>Education</h2>
+                        <div id="Education">
+                        <div id="Education_copy"> 
+                    <label for="School">School</label>
+                    <input type="text" name="School" class="Name" id="School">
+                    <label for="Degree">Degree</label>   
+                    <input type="text" name="Degree" class="Name" id="Degree">
+
+
+                    <label for="date">Start and End date</label>
+                    <div class="date">
+                        <input type="month" name="Start_Edu" class="Name" id="Start_Edu" placeholder="MM / YYYY" value="2022-06">
+                        <input type="month" name="End_Edu" class="Name" id="End_Edu" placehoer="MM / YYldYY" value="2022-06">
+                        </div>
+                    <label for="Desciption">Desciption
+                    </label>
+                    <textarea class="Summary" name ="Desciption_Edu" placeholder="e.g Graduated with High Honors."></textarea>
+                    
+
+                </div>
+            </div>
+                <div class="add_remove">
+                <p class="add" id="addEducation">+ Add more Education</p>
+                    <p class="remove" id="removeEducation">- remove Education</p>
+                </div>
+                </div>
+                         
+            
+
+            <div class="mySlides">
+        <div id="add_skillss" class="skillssss">
+        <div class="date">
+            <div>
+            <label for="skill">Skill 1</label><br>
+            <input type="text" name="skill" class="Name" id="skill">
+            </div>
+                    
+            <div>
+            <label for="skill">Skill 2</label><br>
+            <input type="text" name="skill" class="Name" id="skill">
+            </div>
+            </div>
+        </div>
+        <div class="add_remove">
+        <div   id="Add_Skill1"  class="add">+ Add Skill</div>
+        <div   id="Delete_Skill" class="remove">- Delete Skill</div>
+        </div>
+    </div>             
+   
+
+
+    
+    <div class="mySlides">
+        <div   id="Language_parent">
+        <div class="date" id="Language">
+            <div>
+            <label for="skill">Language</label><br>
+            <input type="text" name="Language" class="Name" id="skill">
+            </div>
+                    
+            <div>
+            <label for="Level">Level</label><br>
+            <div class="select">
+            <select   id="standard-select" name="option">
+                <option ></option>
+                <option value="Native speaker">Native speake</option>
+                <option value="Highly proficient">Highly proficient</option>
+                <option value="Very good command">Very good command</option>
+                <option value="Good working knowlege">Good working knowlege</option>
+                <option value="Working knoledge">Working knoledge</option>
+                <option value="C2">C2</option>
+                <option value="C1">C1</option>
+                <option value="B2">B2</option>
+                <option value="B1">B1</option>
+                <option value="A2">A2</option>
+                <option value="A1">A1</option>
+            </select>
+                </div>
+            </div>
+            </div>
+        </div>
+       <!--  <div onclick="add_Language()" id="myBtn">+</div> -->
+        <div class="add_remove">
+            <p class="add" id="AddLanguage">+ Add another Language</p>
+                <p class="remove" id="removeLanguage">- delete Language</p>
+            </div>
+    </div> 
+
+
+
+
+
+
+    <div class="mySlides">
+        <div   class="skillssss">
+        <div class="date template">
+            <div>
+            <label for="skill">template 1</label><br><br>
+             <img src="images/1.jpg" id="template1" class="img">
+            </div>
+            
+            <div>
+            <label for="skill">template 2</label><br><br>
+                <img src="images/2.png" id="template2" class="img">
+            </div>
+            </div>
+        </div>
+        <br>
+        <div>
+            <button type="submit" id="submit"><span class="fa-solid fa-clipboard-list fa-2xl">  </span> &nbsp; get your Resume </button>
+        </div>
+    </div> 
+   
+                 <br><br><br>
+                            <div class="btn_div">
+                                <button class="back" type="button" onclick="previousbtn(); plusDivs(-1);" id="previous"> << previous</button>
+                                <button class="Continue"  type="button" onclick="plusDivs(1);next();  " id="Continue">Continue >></button>
+                                </div>
+                                <!-- <button type="submit" >submit</button> -->
+    </form>
+    <br><br>
+    <div class="col-2"></div>
+</main>
+       
+    
+    <script src="js/project.js"></script>
+</body>
+</html>
